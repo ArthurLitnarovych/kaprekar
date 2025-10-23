@@ -11,10 +11,12 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular/build:application",
+          "builder": "@angular-devkit/build-angular:browser-esbuild",
           "options": {
-            "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
+            "outputPath": "dist/kaprekar",
+            "index": "src/index.html",
+            "main": "src/main.ts",
             "assets": [
               {
                 "glob": "**/*",
@@ -81,5 +83,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "744f9c6a-132b-4a80-b521-647706837fe9"
   }
 }
