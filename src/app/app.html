@@ -49,17 +49,19 @@
       class="flex flex-col gap-2 border border-dashed rounded-lg border-2 border-[#cfdbe7] p-2 whitespace-pre-line mb-2"
     >
       @if(kaprekarResult() === '') {
-      <p
-        class="text-lg font-bold leading-tight tracking-[-0.015em] max-w-[480px] text-center text-[#0d141b]"
-      >
-        Your results will appear here.
-      </p>
-      <p
-        class="text-sm font-normal leading-normal max-w-[480px] text-center text-[#4c739a] text-gray-400"
-      >
-        The steps of the calculation will be shown here once you enter a number and click
-        'Calculate'.
-      </p>
+      <div class="w-full flex flex-col justify-center items-center">
+        <p
+          class="text-lg font-bold leading-tight tracking-[-0.015em] max-w-[480px] text-center text-[#0d141b]"
+        >
+          Your results will appear here.
+        </p>
+        <p
+          class="text-sm font-normal leading-normal max-w-[480px] text-center text-[#4c739a] text-gray-400"
+        >
+          The steps of the calculation will be shown here once you enter a number and click
+          'Calculate'.
+        </p>
+      </div>
       } @else {
       <om-typewriter
         key="kaprekarResult()"
